@@ -19,7 +19,9 @@ class Storage {
       return `there is no ${itemToRemove} in Storage`;
     }
 
-    this.#items.splice(itemToRemove, 1);
+    this.#items.splice(indexToDelete, 1);
+
+    // this.#items = this.#items.filter(item => item !== itemToRemove);
   }
 }
 
